@@ -1,0 +1,33 @@
+.box1, .box2{
+    position: absolute;
+  }
+  
+  .box1 {
+    filter: hue-rotate(20deg); /* also creates a new stacking context */
+    top: 40px;
+    left: 40px;
+    background: palevioletred;
+  }
+  
+  .box2 {
+    z-index: 2;
+    top: 80px;
+    left: 80px;
+    background:lightskyblue;
+  }
+  
+  .box3 {
+    z-index: 100; /* has no effect */
+    background: lightgreen;
+  }
+  
+  
+  div {
+    height: 150px;
+    width: 150px;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    text-align: right;
+    padding: 5px;
+    box-sizing: border-box;
+  }
